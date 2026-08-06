@@ -1,0 +1,36 @@
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual Environment
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+
+# The data used
+data/
+
+# Generated results
+results/
+logs/
+output/
+temp/
+
+# Images and reports generated during processing
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# Data caches
+*.nc.cache
+
+# SQLite database (if regenerated automatically)
+*.db
+
+# macOS / Windows
+.DS_Store
+Thumbs.db

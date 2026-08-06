@@ -206,3 +206,25 @@ LOG_FILE = os.path.join(
     "logs",
     "processing.log"
 )
+
+# ==========================================================
+# RINEX DATA STRUCTURE
+# ==========================================================
+
+# RINEX folder organization:
+#
+# data/rinex/
+#       YYYY/
+#          MM/
+#             DD/
+#                file.obs.zip
+
+
+RINEX_EXTENSION = ".zip"
+
+
+RINEX_YEAR_FORMAT = "%Y"
+
+RINEX_MONTH_FORMAT = "%m"
+
+RINEX_DAY_FORMAT = "%d"

@@ -41,11 +41,23 @@ SMAP_DIR = os.path.join(
     "smap"
 )
 
+CYGNSS_DIR = os.path.join(
+    DATA_DIR,
+    "cygnss"
+)
+
 
 METADATA_DIR = os.path.join(
     DATA_DIR,
     "metadata"
 )
+
+# We delete the unwanted files after using
+TEMP_DIR = os.path.join(
+    BASE_DIR,
+    "temp"
+)
+
 
 
 # Results
@@ -211,16 +223,21 @@ LOG_FILE = os.path.join(
 # RINEX DATA STRUCTURE
 # ==========================================================
 
-# RINEX folder organization:
-#
 # data/rinex/
-#       YYYY/
-#          MM/
-#             DD/
-#                file.obs.zip
+#     STATION/
+#         YEAR/
+#             MONTH/
+#                 DAY/
+#                     file.zip
 
 
-RINEX_EXTENSION = ".zip"
+SUPPORTED_RINEX_EXTENSIONS = [
+    ".zip",
+    ".obs",
+    ".rnx",
+    ".o",
+    ".gz"
+]
 
 
 RINEX_YEAR_FORMAT = "%Y"
